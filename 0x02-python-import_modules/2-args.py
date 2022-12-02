@@ -13,3 +13,4 @@ if __name__ == '__main__':
         print('{:d} arguments:'.format(len(argv) - 1))
 
     for i, arg in enumerate(argv[1:], start=1):
+        print('{:d}: {:s}'.format(i, arg))
