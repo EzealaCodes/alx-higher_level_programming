@@ -4,6 +4,7 @@
 
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix.
+
     Args:
         matrix (list): A list of lists of ints or floats.
         div (int/float): The divisor.
@@ -22,7 +23,6 @@ def matrix_divided(matrix, div):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 
-   
     if not all(len(row) == len(matrix[0]) for row in matrix):
         raise TypeError("Each row of the matrix must have the same size")
 
